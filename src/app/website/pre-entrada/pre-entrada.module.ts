@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 import { PreEntradaRoutingModule } from './pre-entrada-routing.module';
 import { LayoutComponent } from './components/layout/layout.component';
@@ -8,12 +9,13 @@ import { PreEntradasComponent } from './pages/pre-entradas/pre-entradas.componen
 
 @NgModule({
   declarations: [
-    LayoutComponent,
-    PreEntradasComponent
+    PreEntradasComponent,
+    LayoutComponent
   ],
   imports: [
     CommonModule,
-    PreEntradaRoutingModule
+    PreEntradaRoutingModule,
+    SharedModule
   ]
 })
 export class PreEntradaModule { }

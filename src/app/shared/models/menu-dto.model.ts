@@ -1,5 +1,5 @@
 export interface MenuDto {
-    moduleIdentifier: number;
+    moduleIdentifier?: number;
     moduleName: string;
     moduleUrl: string;
 }

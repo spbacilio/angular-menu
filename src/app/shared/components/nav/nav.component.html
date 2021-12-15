@@ -2,7 +2,7 @@
     <div>
         <button (click)="toggleMenu()">
           <!-- <img src="./assets/svg/icon_menu.svg" alt="menu"> -->  
-          <img src="./assets/svg/logistic.jpg" alt="menu">
+          <img src="./assets/svg/logo_yard_sale.svg" alt="menu">
         </button>
         <a href="">
             <img src="./assets/svg/logo_yard_sale.svg" alt="logo">
@@ -15,9 +15,9 @@
 <div class="side-menu" [class.active]="activeMenu">
     <button (click)="toggleMenu()">close</button>
     <ul>
-        <li><a href=""></a>All</li>
-        <li><a href=""></a>Clothes</li>
-        <li><a href=""></a>Elect.</li>
+        <li *ngFor="let item of menuList" >
+            <a [routerLink]="[item.moduleUrl]">{{ item.moduleName }}</a>
+        </li>
     </ul>
 </div>
 <div class="hide-mobile">
