@@ -12,6 +12,10 @@ const routes: Routes = [
     loadChildren: () => import('./website/pre-entrada/pre-entrada.module').then(m => m.PreEntradaModule)
   },
   {
+    path: 'inspeccion',
+    loadChildren: () => import('./website/inspeccion/inspeccion.module').then(m => m.InspeccionModule)
+  },
+  {
     path: '**',
     component: NotFoundComponent
   }
