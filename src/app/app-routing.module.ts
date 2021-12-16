@@ -16,6 +16,10 @@ const routes: Routes = [
     loadChildren: () => import('./website/inspeccion/inspeccion.module').then(m => m.InspeccionModule)
   },
   {
+    path: 'entrada',
+    loadChildren: () => import('./website/entrada/entrada.module').then(m => m.EntradaModule)
+  },
+  {
     path: '**',
     component: NotFoundComponent
   }

@@ -18,7 +18,7 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
     this.menuList.push({ moduleUrl: '/pre-entrada/pre-entradas', moduleName: 'PRE ENTRADA' });
     this.menuList.push({ moduleUrl: '/inspeccion/inspecciones', moduleName: 'INSPECCION' });
-    this.menuList.push({ moduleUrl: '/entradas/entradas', moduleName: 'ENTRADA' });
+    this.menuList.push({ moduleUrl: '/entrada/entradas', moduleName: 'ENTRADA' });
   }
 
   toggleMenu(): void {
