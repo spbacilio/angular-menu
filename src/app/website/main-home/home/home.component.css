@@ -4,6 +4,12 @@
     border-color: orange;
 }
 .main-footer{
+    text-align: center;
     background-color: blueviolet;
     border: chocolate;
+    border-style: solid;
+    border-color: green;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
