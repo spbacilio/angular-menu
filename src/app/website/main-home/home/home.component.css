@@ -1,6 +1,7 @@
 .main-header {
     background-color: gray;
-    border-style: dotted;
+    border-style:solid;
+    border-color: orange;
 }
 .main-footer{
     background-color: blueviolet;
